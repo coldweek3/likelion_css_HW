@@ -38,19 +38,19 @@ body {
 
 }
 
-
 /* 아래에 item css style을 지정해주세요. */
 
 .item{
   display: flex;
   border: 1px solid black;
-  justify-content: center;
+  /* justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-direction: column; */
   width: 650px;
+  /* background-color: black; */
   
   
-}
+} 
 
 #pro{
   border-radius: 70%;
@@ -62,8 +62,57 @@ body {
   justify-content: left;
   float: left;
   position: relative;
+  margin: 15px;
+
+
 
 }
 
+.post{
+  
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+}
 
+.top{
+  display: block;
+  position: relative;
+  text-align: center;
+}
 
+#left_icon{
+  display: flex;
+  align-items: center;
+  float: left;
+}
+
+.post{
+  text-align: center;
+  display: inline;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+#myid{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  
+}
+
+p{
+  margin: 0;
+}
+
+#dots{
+  display: flex;
+  align-items: center;
+  float: right;
+}
+
+.post_photo img{
+  display: inline-block;
+  -ms-interpolation-mode: bicubic;
+}
