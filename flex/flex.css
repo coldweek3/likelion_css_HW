@@ -1,14 +1,17 @@
 /* Global -------------------------------------------------*/
 
-/* @font-face {
-  font-family: 'Space Mono', monospace;
-  src: url("../static/fonts/AppleSDGothicNeoB.ttf");
-} */
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
 
 * {
+  font-family: 'Pretendard-Regular';
   box-sizing: border-box;
   font-size: 1.2rem;
-  /* font-family: "AppleSDGothicNeoB"; */
+  color: white;
 }
 
 /* html -------------------------------------------------- */
@@ -21,7 +24,7 @@ body {
   height: 100vh;
   margin: 0;
   position: absolute;
-  
+  background-color: black;
   
 }
 
@@ -41,16 +44,24 @@ body {
 /* 아래에 item css style을 지정해주세요. */
 
 .item{
-  display: flex;
+  display: inline-block;
   border: 1px solid black;
   /* justify-content: center;
   align-items: center;
   flex-direction: column; */
   width: 650px;
-  /* background-color: black; */
-  
-  
-} 
+  background-color: rgb(25, 25, 25);
+
+
+}
+
+.dots{
+  float: right;
+  display: flex;
+  position:relative;
+  right: 15px;
+  bottom: 30px;
+}
 
 #pro{
   border-radius: 70%;
@@ -76,29 +87,33 @@ body {
 }
 
 .top{
-  display: block;
+  display: flex;
   position: relative;
   text-align: center;
+  height: 40px;
+ 
 }
 
 #left_icon{
   display: flex;
   align-items: center;
   float: left;
+  position: relative;
+  
 }
 
 .post{
   text-align: center;
-  display: inline;
   justify-content: center;
   align-items: center;
   flex: 1;
 }
 
 #myid{
-  display: flex;
+  display: inline;
   position: relative;
   flex-direction: column;
+  top: 8px;
   
 }
 
@@ -110,9 +125,135 @@ p{
   display: flex;
   align-items: center;
   float: right;
+  position: relative;
+
 }
 
-.post_photo img{
-  display: inline-block;
-  -ms-interpolation-mode: bicubic;
+.main{
+  width: 650px;
+  height: 650px;
+  background-image: url('https://i.ibb.co/SxGXw3C/likelion.jpg');
+  background-size: cover;
+  position: relative;
+}
+
+.main img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(50, 50);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: auto;
+}
+
+#icon_comment{
+  transform: scaleX(-1);
+  left: 10px;
+  position: relative;
+}
+
+#plane{
+  left:20px;
+  position: relative;
+}
+
+
+.icon_left{
+  display: inline;
+  float: left;
+  /* margin-top: 7px; */
+  /* padding-top: 7px; */
+  top: 13px;
+  position: relative;
+  left:10px;
+}
+
+.icon_right{
+  display: inline;
+  float:right;
+  margin-top: 7px;
+  position: relative;
+  right: 10px;
+ 
+}
+
+.post_content{
+  /* display: inline-block; */
+  height: 21vh;
+  
+}
+
+#data{
+  display: block;
+  position: relative;
+  font-size: small;
+  color: rgb(139, 139, 139);
+}
+
+#pro2{
+  border-radius: 70%;
+  overflow: hidden;
+  border: 1px solid black;
+  height: 30px;
+  width: 30px;
+  justify-content: center;
+  top: 50%;
+  
+
+  /* display: flex;
+  justify-content: right;
+  float: right;
+  position: relative; */
+  /* margin: 15px; */
+}
+
+/* #house{
+  left:10px;
+}
+
+#plane{
+  right:10px;
+  position: relative;
+} */
+
+.bottom_icon{
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  align-items: center;
+  height: 43px;
+}
+
+
+#like{
+  text-align: left;
+  top:10px;
+  position: relative;
+  left:10px;
+}
+
+#data{
+  top: 15px;
+  position: relative;
+  left: 10px;
+
+}
+
+.post{
+  font-size: large;
+}
+
+#location{
+  font-size: small;
+  position: relative;
+  
+  
+}
+
+#myid{
+  font-size: x-large;
+  position: relative;
+  line-height: 50px;
 }
