@@ -14,7 +14,6 @@
   color: white;
 }
 
-/* html -------------------------------------------------- */
 
 body {
   display: flex;
@@ -28,7 +27,7 @@ body {
   
 }
 
-/* 아래에 container css style을 지정해주세요. */
+
 .container{
   display: flex;
   border:1px solid black;
@@ -41,14 +40,11 @@ body {
 
 }
 
-/* 아래에 item css style을 지정해주세요. */
+
 
 .item{
   display: inline-block;
   border: 1px solid black;
-  /* justify-content: center;
-  align-items: center;
-  flex-direction: column; */
   width: 650px;
   background-color: rgb(25, 25, 25);
 
@@ -163,8 +159,6 @@ p{
 .icon_left{
   display: inline;
   float: left;
-  /* margin-top: 7px; */
-  /* padding-top: 7px; */
   top: 13px;
   position: relative;
   left:10px;
@@ -176,11 +170,9 @@ p{
   margin-top: 7px;
   position: relative;
   right: 10px;
- 
 }
 
 .post_content{
-  /* display: inline-block; */
   height: 21vh;
   
 }
@@ -200,23 +192,8 @@ p{
   width: 30px;
   justify-content: center;
   top: 50%;
-  
-
-  /* display: flex;
-  justify-content: right;
-  float: right;
-  position: relative; */
-  /* margin: 15px; */
 }
 
-/* #house{
-  left:10px;
-}
-
-#plane{
-  right:10px;
-  position: relative;
-} */
 
 .bottom_icon{
   display: flex;
